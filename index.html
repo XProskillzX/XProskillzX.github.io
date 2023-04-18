@@ -7,16 +7,17 @@
     <title>Vansh Kumar</title>
 </head>
 <script>
-console.log('Hello Console!');
-function myFunction() {
-    document.body.style.color="rgb(255,0,0)";
-}
-let random_var="UCSD";
-document.write(random_var);
-
+    function changeDocument() {
+      var paragraph = document.getElementById("para");
+      paragraph.style.color = "red";
+    }
 </script>
 <body>
-    <h1>Hello World</h1>
-    <button type="button" onclick="myFunction()">Set background color</button>
+  <form>
+    <div>
+      <button onclick="changeDocument()">Button which changes colour</button>
+    </div>
+  </form>
+  <p id="para">Paragraph which changes colour</p>
 </body>
 </html>
